@@ -1,0 +1,10 @@
+@import 'cssresets';
+@import 'variables';
+@import 'nav';
+@import 'img';
+@import 'icons';
+
+body {
+  background-color: $backcolour;
+  color: $fontColor;
+}
