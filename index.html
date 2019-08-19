@@ -4,34 +4,191 @@
   <head>
     <meta charset="UTF-8">
   	<meta name="viewport" content="width=device-width,initial-scale=1">
-    
     <title>Floriditas</title>
   	
   	<link rel="stylesheet" href="css/style.css" type="text/css">
   	
-  	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
   </head>
   <body>
-		are you here
-  	 <nav>
-      <i  class="fas test ppp fa-window-close"></i>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Variables</a></li>
-          <li><a href="#">Nesting</a></li>
-        </ul>
-   </nav>
+    <header class="home-page__header">
+        <img class="home-page home-page__logo" src="" alt="Floriditas">
+        <nav class="home-page-nav-desktop">
+          <ul class="home-page-nav-desktop__links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+    <section class="home-page">
+      <div class="home-page__image">
+        <img src="" alt="home-page__image">
+      </div>
+      <!--  -->
+      <div class="home-page__down-button">
+         <a href="#about">About <img src="img/circle-arrow-button.svg" alt="home-page__down-button">
+        </a>  
+      </div>
+    </section>
+      
 
-   <!-- hello -->
+<!-- ul.menu__links>(li>a{text})*4 -->
+<!-- use for desktop? -->
+      
+    
+      <!--
+      <p>Click on the Menu Icon to transform it to "X":</p>
+      <div class="home-page-container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      </div>
+      </div>
+    -->
 
-   <script src="js/script.js">
+    <section class="section">
+      <div class="section__header">
+        <h3 class="section__heading section__heading--about" id="about">About</h3>
+      </div>
+      <div class="section__body">
+        <p>Is a smart comfortable café and restaurant, serving food continuously throughout the day.</p>
+      
 
-   </script>
-  
+          Situated in the heart of Cuba Street,Wellington, New Zealand’s capital city.
+
+          Floriditas is constantly striving for that magical combination of delicious tasty food, beautifully crafted wines and slick service.
+
+          New Zealand produce influenced by the cuisines and techniques of the Mediterranean. Clean flavours that let the ingredients speak for themselves.
+
+          Open all day we offer simple, delicious, tasty seasonal food to from local and national producers.
+
+          Breakfast, lunch, dinner and everything in between. Sweet treats from the counter to tempt you and beautifully made Coffee Supreme coffee.
+
+          Wines from all New Zealand’s regions and taste of what the rest of the world has to offer. 
+
+          All from early morning until late at night, seven days a week.
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h3 class="section__heading section__heading--menu" id="menu">Menu</h3>
+      </div>
+      <div class="section__body">
+        <div class="menu-page-breakfast">
+          <div class="menu-page-breakfast__link">
+            <a href="#"> Breakfast </a>
+          </div>
+          <div class="menu-page-breakfast__image">
+            <img src="" alt="breakfast-page__image">
+          </div>
+        </div>
+
+        <div class="menu-page-lunch">
+          <div class="menu-page-lunch__link">
+            <a href="#"> Lunch </a>
+          </div>
+          <div class="menu-page-lunch__image">
+            <img src="" alt="lunch-page__image">
+          </div>
+        </div>
+
+        <div class="menu-page-dinner">
+          <div class="menu-page-dinner__link">
+            <a href="#">Dinner</a>
+          </div>
+          <div class="menu-page-dinner__image">
+            <img src="" alt="dinner-page__image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h3 class="section__heading section__heading--reservation" id="reservation">Reservation</h3>
+      </div>
+      <div class="section__body">
+        <p>Reservation stuff goes here</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__header">
+        <h3 class="section__heading section__heading--contact" id="contact">Contact</h3>
+      </div>
+      <div class="section__body">
+        <p>Contact stuff goes here</p>
+        
+        <!-- Details: Address -->
+        <div class="details">
+          <h3 class="details__heading">
+            Address
+          </h3>
+          <div class="details__copy">
+            <p>161 Cuba Street</p>
+          </div>
+        </div>
+
+        <!-- Details: Contact -->
+        <div class="details">
+          <h3 class="details__heading">
+            Contact
+          </h3>
+          <div class="details__copy">
+            <p>Phone us: <a href="tel:043812212">04 381 2212</a></p>
+            <p>Email us: <a href="mailto:hello@floriditas.co.nz">hello@floriditas.co.nz</a></p>
+          </div>
+        </div>
+        
+        <!-- Details: Business  -->
+        <div class="details">
+          <h3 class="details__heading">
+            Business Hours
+          </h3>
+          <div class="details__copy">
+            <p>7:00am to 10:00pm</p>
+          </div>
+        </div>
+
+        <!-- Details: Menu Hours  -->
+        <div class="details">
+          <h3 class="details__heading">
+            Menu Hours
+          </h3>
+          <div class="details__copy">
+            <p>Breakfast 7:00am to 11:30pm</p>
+            <p>Lunch 11:30am to 03:00pm</p>
+            <p>Dinner 03:00am to 10:00pm</p>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <footer class=home-page-footer>
+      <img src="img/home-page-button-arrow.svg" alt="button-arrow">
+    </footer>
+
+
+
+
+
+  <script>
+  function myFunction(x) {
+  x.classList.toggle("change");
+  }
+  </script>
+
+
+
+
+
+
+  	
   </body>
 </html>
