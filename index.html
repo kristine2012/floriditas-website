@@ -104,7 +104,7 @@
             <a href="#"> Breakfast </a>
           </div>
           <div class="menu-page-breakfast__image">
-            <img src="" alt="breakfast-page__image">
+            <img src="img/smoothieBowel.jpg" alt="breakfast-page__image">
           </div>
         </div>
 
@@ -113,7 +113,7 @@
             <a href="#"> Lunch </a>
           </div>
           <div class="menu-page-lunch__image">
-            <img src="" alt="lunch-page__image">
+            <img src="img/RoastedFennelSalad.jpg" alt="lunch-page__image">
           </div>
         </div>
 
@@ -122,7 +122,7 @@
             <a href="#">Dinner</a>
           </div>
           <div class="menu-page-dinner__image">
-            <img src="" alt="dinner-page__image">
+            <img src="img/GreenSalad.jpg" alt="dinner-page__image">
           </div>
         </div>
       </div>
@@ -133,7 +133,50 @@
         <h3 class="section__heading" id="reservation">Reservation</h3>
       </div>
       <div class="section__body">
-        <p>Reservation stuff goes here</p>
+        <div class="container">
+          <div class="box-border">
+            <form action="" class="reservation-form">
+              <label for="">Guests</label>
+              <small>For larger parties, please email <a href="">booking@floriditas.co.nz</a></small>
+              <div class="form-group">
+                <div class="number-selector">
+                  <button class="number-selector__button">-</button>
+                  <input class="number-selector__value" type="number">
+                  <button class="number-selector__button">+</button>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="">Date</label>
+                <input type="date" name="bday">
+              </div>
+              
+              <!-- radio groups -- meal type -->
+              <div class="form-group">
+                <form action="/action_page.php">
+                <p>When would you like to eat:</p>
+                <input type="radio" name="times" value="breakfast"> breakfast<br>
+                <input type="radio" name="times" value="lunch"> lunch<br>
+                <input type="radio" name="times" value="dinner"> dinner<br>  
+                </form> 
+              </div>
+
+              <div class="form-group">
+                <label for="">Available times</label>
+                <select name="" id="">
+                  <option value="07:00am">07:00AM</option>
+                  <option value="07:00am">07:00AM</option>
+                  <option value="07:00am">07:00AM</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <!-- button -- request reservation -->
+                <input type="submit" value="Request reservation">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -143,56 +186,55 @@
 
       </div>
       <div class="section__body">
-      
-        
-        <!-- Details: Address -->
-        <div class="details">
-          <h3 class="details__heading">
-            Address
-          </h3>
-          <div class="details__copy">
-            <p>161 Cuba Street Wellington</p>
+        <div class="container">
+          <div class="box-border">
+            <!-- Details: Address -->
+            <div class="details">
+              <h3 class="details__heading">
+                Address
+              </h3>
+              <div class="details__copy">
+                <p>161 Cuba Street Wellington</p>
+              </div>
+            </div>
+
+            <!-- Details: Contact -->
+            <div class="details">
+              <h3 class="details__heading">
+                Contact
+              </h3>
+              <div class="details__copy">
+                <p>Phone us: <a href="tel:043812212">04 381 2212</a></p>
+                <br>
+                <p>Email us: <a href="mailto:hello@floriditas.co.nz">hello@floriditas.co.nz</a></p>
+              </div>
+            </div>
+            
+            <!-- Details: Business  -->
+            <div class="details">
+              <h3 class="details__heading">
+                Business Hours
+              </h3>
+              <div class="details__copy">
+                <p>7:00am to 10:00pm</p>
+              </div>
+            </div>
+
+            <!-- Details: Menu Hours  -->
+            <div class="details">
+              <h3 class="details__heading">
+                Menu Hours
+              </h3>
+              <div class="details__copy">
+                <p>Breakfast 7:00am to 11:30pm
+                <br><br>
+                Lunch 11:30am to 03:00pm
+                <br><br>
+                Dinner 03:00am to 10:00pm</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        <!-- Details: Contact -->
-        <div class="details">
-          <h3 class="details__heading">
-            Contact
-          </h3>
-          <div class="details__copy">
-            <p>Phone us: <a href="tel:043812212">04 381 2212</a></p>
-            <br>
-            <p>Email us: <a href="mailto:hello@floriditas.co.nz">hello@floriditas.co.nz</a></p>
-          </div>
-        </div>
-        
-        <!-- Details: Business  -->
-        <div class="details">
-          <h3 class="details__heading">
-            Business Hours
-          </h3>
-          <div class="details__copy">
-            <p>7:00am to 10:00pm</p>
-          </div>
-        </div>
-
-        <!-- Details: Menu Hours  -->
-        <div class="details">
-          <h3 class="details__heading">
-            Menu Hours
-          </h3>
-          <div class="details__copy">
-            <p>Breakfast 7:00am to 11:30pm
-            <br><br>
-            Lunch 11:30am to 03:00pm
-            <br><br>
-            Dinner 03:00am to 10:00pm</p>
-
-
-          </div>
-        </div>
-
       </div>
     </section>
 

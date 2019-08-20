@@ -1,11 +1,18 @@
 @import 'cssresets';
 @import 'variables';
+@import 'mixins';
 @import 'nav';
 @import 'img';
 @import 'icons';
 
 body {
   color: $fontColor;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
 }
 
 .home-page__logo {
@@ -71,31 +78,52 @@ body {
 		display: inline-block;
 		padding: 16px;
 		width: 100%;
-		background-color: white;
-		opacity: 0.8;
+		@include bg-color-opacity(white, 0.8);
 	}
 }
+
 .section__body--about{ 
-		p{
-			margin:30px; 
-			border-style:solid;
-			border-color:#FA903A;
-			padding: 30px;
+	p {
+		margin: 30px; 
+		padding: 30px;
+		border-style: solid;
+		border-color: #FA903A;
 
-		}
 	}
-.details{
-	margin:30px; 
-			border-style:solid;
-			border-color:#FA903A;
-			padding: 30px;
-			font-family: 'Roboto', sans-serif;
 }
-.details__copy{
-	margin-top: 15px;
-	font-size: 20px;
 
+.details {
+	padding: 30px;
+	
+
+	&__copy {
+		margin-top: 15px;
+		font-size: 17px;
+	}
+
+	&__heading{
+		font-size: 30px;
+	}
 }
-.details__heading{
-	font-size: 30px;
+
+
+.reservation-form {
+	label {
+		display: block;
+	}
+
+	small {
+		display: block;
+		margin-bottom: 12px;
+	}
+}
+
+.form-group {
+	margin-bottom: 24px;
+}
+
+.box-border {
+	margin: 30px;
+	padding: 30px;
+	border: 4px solid #FA903A;
 }
