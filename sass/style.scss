@@ -75,10 +75,27 @@ body {
 		opacity: 0.8;
 	}
 }
-	.section__body { 
-		p { 
+.section__body--about{ 
+		p{
+			margin:30px; 
 			border-style:solid;
 			border-color:#FA903A;
+			padding: 30px;
+
 		}
 	}
+.details{
+	margin:30px; 
+			border-style:solid;
+			border-color:#FA903A;
+			padding: 30px;
+			font-family: 'Roboto', sans-serif;
+}
+.details__copy{
+	margin-top: 15px;
+	font-size: 20px;
 
+}
+.details__heading{
+	font-size: 30px;
+}
