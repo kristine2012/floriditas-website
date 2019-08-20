@@ -1,31 +1,135 @@
-.container {
-  display: inline-block;
-  cursor: pointer; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none; }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s; }
+/*
+nav{
+  padding:3*$padding;
+  background:$backcolour;
+  border:2px solid $fontColor;
+  width:$width;
+  height:100vh;
+  display:none;
+  z-index:3;
+  position:fixed;
+  top:0px;
+  left:0px;
+  ul{
+    li{
+      padding: $padding;
+      a{
+        color: $fontColor;
+        font-size:$fontSize;
+      }
+    }
+  }
+}
+.active{
+  display:block;
+}
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px); }
+/* Style the navigation menu */
+.topnav
+.topnav {
+  overflow: hidden;
+  background-color: grey;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  position: relative; }
 
-.change .bar2 {
-  opacity: 0; }
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none; }
 
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px); }
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block; }
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #FA903A;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: #FA903A; }
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: none;
+  color: none; }
+
+.fas {
+  font-size: 40px;
+  margin: 45px; }
+
+.ppp {
+  color: pink; }
 
 body {
-  background-color: white;
   color: black; }
 
 .home-page__logo {
   width: 50px;
   height: auto; }
+
+.image-header {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url("../img/buckwheat.jpg");
+  image-orientation: 180deg;
+  background-size: cover; }
+  .image-header__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 54px 32px;
+    border: 4px solid #FA903A; }
+  .image-header__link {
+    display: block;
+    padding: 8px 36px;
+    font-size: 24px;
+    text-align: center;
+    background-color: #FA903A;
+    color: white; }
+
+.section__header {
+  padding: 32px;
+  text-align: center;
+  font-size: 30px;
+  color: #FA903A;
+  font-family: 'Oleo Script', cursive;
+  background-size: cover; }
+  .section__header--about {
+    background-image: url("../img/about.jpg"); }
+  .section__header--menu {
+    background-image: url("../img/overnightOats.jpg"); }
+  .section__header--reservation {
+    background-image: url("../img/reserved.jpg"); }
+  .section__header--contact {
+    background-image: url("../img/pattern-01.png"); }
+.section__heading {
+  display: inline-block;
+  padding: 16px;
+  width: 100%;
+  background-color: white;
+  opacity: 0.8; }
+
+.section__body p {
+  border-style: solid;
+  border-color: #FA903A; }
 
 /*# sourceMappingURL=style.css.map */

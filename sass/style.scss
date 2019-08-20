@@ -5,12 +5,80 @@
 @import 'icons';
 
 body {
-  background-color: $backcolour;
   color: $fontColor;
 }
 
-.home-page__logo{
+.home-page__logo {
 	width: 50px;
 	height:auto;
 }
+
+.image-header {
+	position: relative;
+	width: 100%;
+	height: 50vh;
+	background-image: url("../img/buckwheat.jpg");
+	
+	image-orientation:180deg;
+  	background-size: cover;
+
+  	&__cta {
+  		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 54px 32px;
+		border: 4px solid #FA903A;
+  	}
+
+  	&__link {
+  		display: block;
+		padding: 8px 36px;
+		font-size: 24px;
+		text-align: center;
+		background-color: #FA903A;
+		color:white;
+  	}
+}
+
+.section {
+	&__header {
+		padding: 32px;
+		text-align: center;
+		font-size: 30px;
+		color:	#FA903A;
+		font-family: 'Oleo Script', cursive;
+		background-size: cover;
+
+		&--about {
+			background-image:url("../img/about.jpg");
+		}
+
+		&--menu {
+			background-image:url("../img/overnightOats.jpg");
+		}
+
+		&--reservation {
+			background-image:url("../img/reserved.jpg");
+		}
+
+		&--contact {
+			background-image:url("../img/pattern-01.png");
+		}
+	}
+
+	&__heading {
+		display: inline-block;
+		padding: 16px;
+		width: 100%;
+		background-color: white;
+		opacity: 0.8;
+	}
+}
+	.section__body { 
+		p { 
+			border-style:solid;
+			border-color:#FA903A;
+		}
+	}
 

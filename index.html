@@ -7,13 +7,32 @@
     <title>Floriditas</title>
 
   	 <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet"> 
-  	<link rel="stylesheet" href="css/style.css" type="text/css">
   	
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <header class="home-page__header">
-        <img class="home-page home-page__logo" src="img/Logo-02.png" alt="Floriditas">
-        <nav class="home-page-nav-desktop">
+        
+      <!-- Top Navigation Menu --> 
+        <nav class="topnav">
+          <a href="#home" class="active"><img class="home-page home-page__logo" src="img/Logo-02.png" alt="Floriditas"></a>
+          <div id="myLinks">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#reservation">Reservation</a>
+            <a href="#contact">Contact</a>
+          </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </nav>
+       </div>
+        <!--  
+        <nav class>
           <ul class="home-page-nav-desktop__links">
             <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
@@ -26,7 +45,9 @@
       <div class="home-page__image">
         <img src="" alt="home-page__image">
       </div>
-      <!--  -->
+       -->
+
+       <!--  
       <div class="home-page__down-button">
          <a href="#about">About <img src="img/circle-arrow-button.svg" alt="home-page__down-button">
         </a>  
@@ -47,34 +68,47 @@
       </div>
       </div>
     -->
+    
+    <!-- image header -->
+    <section class="image-header">
+      <a href="#reservation" class="image-header__cta">
+        <span class="image-header__link">Book now</span>
+      </a>
+    </section>
 
     <section class="section">
-      <div class="section__header">
-        <h3 class="section__heading section__heading--about" id="about">About</h3>
+      <div class="section__header section__header--about">
+        <h3 class="section__heading" id="about">About</h3>
       </div>
       <div class="section__body">
-        <p>Is a smart comfortable café and restaurant, serving food continuously throughout the day.</p>
+        <p>Is a smart comfortable café and restaurant, serving food continuously throughout the day.
       
-
           Situated in the heart of Cuba Street,Wellington, New Zealand’s capital city.
-
+        
+        
           Floriditas is constantly striving for that magical combination of delicious tasty food, beautifully crafted wines and slick service.
-
+        
+      
           New Zealand produce influenced by the cuisines and techniques of the Mediterranean. Clean flavours that let the ingredients speak for themselves.
-
+        
+        
           Open all day we offer simple, delicious, tasty seasonal food to from local and national producers.
-
+        
+      
           Breakfast, lunch, dinner and everything in between. Sweet treats from the counter to tempt you and beautifully made Coffee Supreme coffee.
-
+        
+        
           Wines from all New Zealand’s regions and taste of what the rest of the world has to offer. 
-
+        
+        
           All from early morning until late at night, seven days a week.
+        </p>  
       </div>
     </section>
 
     <section class="section">
-      <div class="section__header">
-        <h3 class="section__heading section__heading--menu" id="menu">Menu</h3>
+      <div class="section__header section__header--menu">
+        <h3 class="section__heading" id="menu">Menu</h3>
       </div>
       <div class="section__body">
         <div class="menu-page-breakfast">
@@ -107,8 +141,8 @@
     </section>
 
     <section class="section">
-      <div class="section__header">
-        <h3 class="section__heading section__heading--reservation" id="reservation">Reservation</h3>
+      <div class="section__header section__header--reservation">
+        <h3 class="section__heading" id="reservation">Reservation</h3>
       </div>
       <div class="section__body">
         <p>Reservation stuff goes here</p>
@@ -116,8 +150,8 @@
     </section>
 
     <section class="section">
-      <div class="section__header">
-        <h3 class="section__heading section__heading--contact" id="contact">Contact</h3>
+      <div class="section__header section__header--contact">
+        <h3 class="section__heading" id="contact">Contact</h3>
 
       </div>
       <div class="section__body">
@@ -175,15 +209,18 @@
     <footer class=home-page-footer>
       <img src="img/home-page-button-arrow.svg" alt="button-arrow">
     </footer>
-
-
-
-
-
   <script>
-  function myFunction(x) {
-  x.classList.toggle("change");
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
   }
+}
+
+
   </script>
 
 

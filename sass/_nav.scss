@@ -1,32 +1,72 @@
-
-.container {
-  display: inline-block;
-  cursor: pointer;
+/*
+nav{
+  padding:3*$padding;
+  background:$backcolour;
+  border:2px solid $fontColor;
+  width:$width;
+  height:100vh;
+  display:none;
+  z-index:3;
+  position:fixed;
+  top:0px;
+  left:0px;
+  ul{
+    li{
+      padding: $padding;
+      a{
+        color: $fontColor;
+        font-size:$fontSize;
+      }
+    }
+  }
+}
+.active{
+  display:block;
 }
 
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-  transition: 0.4s;
+/* Style the navigation menu */
+.topnav
+
+.topnav {
+  overflow: hidden;
+  background-color: grey;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  position: relative;
 }
 
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
 }
 
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.home-page-nav-desktop{
-
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #FA903A;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.home-page-nav-desktop__links{
-  
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color:#FA903A;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+
+  background-color: none;
+  color: none;
 }
