@@ -95,6 +95,12 @@ body {
   background-color: white;
   background-color: rgba(255, 255, 255, 0.8); }
 
+.menu-page-breakfast__link {
+  background-image: url("../img/smoothieBowel.jpg");
+  width: 100%;
+  height: 150px;
+  background-color: red; }
+
 .section__body--about p {
   margin: 30px;
   padding: 30px;
