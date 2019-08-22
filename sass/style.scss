@@ -10,6 +10,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -18,6 +24,7 @@ body {
 .home-page__logo {
 	width: 50px;
 	height:auto;
+	
 }
 
 .image-header {
@@ -50,6 +57,7 @@ body {
 
 .section {
 	&__header {
+		margin-top: 24px;
 		padding: 32px;
 		text-align: center;
 		font-size: 30px;
@@ -82,20 +90,113 @@ body {
 	}
 }
 
-.menu-page-breakfast__link{
-	
-	 background-image: url("../img/smoothieBowel.jpg");
-	// background-position: center;
-	 width: 100%;
-	height: 150px;
-	background-color: red;
+.menu-items-row {
+	margin-top: 24px;
 
+	&:last-child {
+		margin-bottom: 24px;
+	}
+
+	> div {
+		@media only screen and (min-width : 768px) {
+			float: left;
+			width: calc(50% - 16px);
+			margin-right: 16px;
+			height: 188px;
+
+			&:last-child {
+				margin-left: 16px;
+				margin-right: 0;
+			}
+		}
+	}
 }
-.menu-page-lunch{
 
+.menu-item {
+	padding: 30px;
+	width: 100%;
+	height: 188px;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	@media only screen and (min-width : 768px) {
+		border: solid;
+		border-color: #FA903A;
+		background: none;
+	}
+
+	&--breakfast {
+		background-image: url("../img/breakfast.jpg");
+
+		@media only screen and (min-width : 768px) {
+			background-image: none;
+		}
+	}
+
+
+
+	&__link {
+		display: inline-block;
+		padding: 24px;
+		width: 200px;
+		font-family: 'Oleo Script', cursive;
+		font-size: 30px;
+		color:	#000000;
+		@include bg-color-opacity(white, 0.8);
+		border: solid;
+		border-color: #FA903A;
+
+		@media only screen and (min-width : 768px) {
+			background: none;
+			border: none;
+		}
+	}
+
+	&__icon {
+		display: none;
+
+		@media only screen and (min-width : 768px) {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			background-image: url("../img/icon.png");
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+	}
 }
 
-.section__body--about{ 
+.menu-image {
+	display: none;
+
+	@media only screen and (min-width : 768px) {
+		display: block;
+	}
+
+	&__img {
+		height: 188px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+
+		&--breakfast {
+			background-image: url("../img/breakfast.jpg");
+		}
+
+		&--lunch {
+			background-image: url("../img/lunch.jpg");
+		}
+
+		&--dinner {
+			background-image: url("../img/dinner.jpg");
+		}
+	}
+}
+
+.section__body--about { 
 	p {
 		margin: 30px; 
 		padding: 30px;

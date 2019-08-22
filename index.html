@@ -16,23 +16,22 @@
 
   </head>
   <body>
-    <header class="home-page__header">
-        
+      
       <!-- Top Navigation Menu --> 
         <nav class="topnav">
-          <a href="#home" class="active"><img class="home-page home-page__logo" src="img/Logo-02.png" alt="Floriditas"></a>
           <div id="myLinks">
             <a href="#about">About</a>
             <a href="#menu">Menu</a>
             <a href="#reservation">Reservation</a>
             <a href="#contact">Contact</a>
-          </div>
+
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
           </div>
         </nav>
-       </div>
+
+        <a href="#home" class="active"><img class="home-page home-page__logo" src="img/Logo-02.png" alt="Floriditas"></a>
         <!--  
         <nav class>
           <ul class="home-page-nav-desktop__links">
@@ -98,31 +97,47 @@
       <div class="section__header section__header--menu">
         <h3 class="section__heading" id="menu">Menu</h3>
       </div>
+
       <div class="section__body">
-        <div class="menu-page-breakfast">
-          <div class="menu-page-breakfast__link">
-            <a href="#"> Breakfast </a>
-          </div>
-          <div class="menu-page-breakfast__image">
-            <!-- <img src="img/smoothieBowel.jpg" alt="breakfast-page__image"> -->
-          </div>
-        </div>
+        <div class="container">
 
-        <div class="menu-page-lunch">
-          <div class="menu-page-lunch__link">
-            <a href="#"> Lunch </a>
+          <!-- <!breakfast -->
+          <div class="menu-items-row clearfix">
+            <div class="menu-item menu-item--breakfast">
+              <a href="#" class="menu-item__link">
+                Breakfast
+                <i class="menu-item__icon"></i>
+              </a>
+            </div>
+            <div class="menu-image">
+              <div class="menu-image__img menu-image__img--breakfast"></div>
+            </div>
           </div>
-          <div class="menu-page-lunch__image">
-            <img src="img/RoastedFennelSalad.jpg" alt="lunch-page__image">
-          </div>
-        </div>
 
-        <div class="menu-page-dinner">
-          <div class="menu-page-dinner__link">
-            <a href="#">Dinner</a>
+          <!-- lunch -->
+          <div class="menu-items-row clearfix">
+            <div class="menu-item menu-item--breakfast">
+              <a href="#" class="menu-item__link">
+                Breakfast
+                <i class="menu-item__icon"></i>
+              </a>
+            </div>
+            <div class="menu-image">
+              <div class="menu-image__img menu-image__img--breakfast"></div>
+            </div>
           </div>
-          <div class="menu-page-dinner__image">
-            <img src="img/GreenSalad.jpg" alt="dinner-page__image">
+
+          <!-- dinner -->
+          <div class="menu-items-row clearfix">
+            <div class="menu-item menu-item--breakfast">
+              <a href="#" class="menu-item__link">
+                Breakfast
+                <i class="menu-item__icon"></i>
+              </a>
+            </div>
+            <div class="menu-image">
+              <div class="menu-image__img menu-image__img--breakfast"></div>
+            </div>
           </div>
         </div>
       </div>
