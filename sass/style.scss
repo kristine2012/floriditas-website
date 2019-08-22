@@ -98,7 +98,13 @@ body {
 	}
 
 	> div {
-		@media only screen and (min-width : 768px) {
+
+		@media only screen and (min-width: 768px){
+			float: left;
+    		width: calc(100%);
+		}
+
+		@media only screen and (min-width : 1224px) {
 			float: left;
 			width: calc(50% - 16px);
 			margin-right: 16px;
@@ -109,6 +115,8 @@ body {
 				margin-right: 0;
 			}
 		}
+
+		
 	}
 }
 
@@ -121,7 +129,17 @@ body {
 	background-position: center center;
 	background-repeat: no-repeat;
 
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width: 768px){
+		border: solid;
+		border-color: #FA903A;
+		background: none;
+		
+
+	}
+
+
+
+	@media only screen and (min-width : 1224px) {
 		border: solid;
 		border-color: #FA903A;
 		background: none;
@@ -130,10 +148,27 @@ body {
 	&--breakfast {
 		background-image: url("../img/breakfast.jpg");
 
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 1224px) {
 			background-image: none;
 		}
 	}
+	
+	&--lunch {
+		background-image: url("../img/lunch.jpg");
+
+		@media only screen and (min-width : 1224px) {
+			background-image: none;
+		}
+	}
+
+	&--dinner {
+		background-image: url("../img/dinner.jpg");
+
+		@media only screen and (min-width : 1224px) {
+			background-image: none;
+		}
+	}
+
 
 
 
@@ -148,7 +183,7 @@ body {
 		border: solid;
 		border-color: #FA903A;
 
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 1224px) {
 			background: none;
 			border: none;
 		}
@@ -157,7 +192,7 @@ body {
 	&__icon {
 		display: none;
 
-		@media only screen and (min-width : 768px) {
+		@media only screen and (min-width : 1224px) {
 			display: inline-block;
 			width: 40px;
 			height: 40px;
@@ -167,34 +202,39 @@ body {
 			background-repeat: no-repeat;
 		}
 	}
+		
 }
+
 
 .menu-image {
 	display: none;
 
-	@media only screen and (min-width : 768px) {
+	@media only screen and (min-width : 1224px) {
 		display: block;
+	
+
+		&__img {
+			height: 188px;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+
+			&--breakfast {
+				background-image: url("../img/breakfast.jpg");
+			}
+
+			&--lunch {
+				background-image: url("../img/lunch.jpg");
+			}
+
+			&--dinner {
+				background-image: url("../img/dinner.jpg");
+			}
+		}
 	}
 
-	&__img {
-		height: 188px;
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-
-		&--breakfast {
-			background-image: url("../img/breakfast.jpg");
-		}
-
-		&--lunch {
-			background-image: url("../img/lunch.jpg");
-		}
-
-		&--dinner {
-			background-image: url("../img/dinner.jpg");
-		}
-	}
 }
+
 
 .section__body--about { 
 	p {
