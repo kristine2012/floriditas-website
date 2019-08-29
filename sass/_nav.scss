@@ -1,8 +1,13 @@
 .topnav{
-  margin-top: 5px;
-  position:absolute;
+  top: 0px;
+  right: 0;
+  position:fixed;
   right:0px;
-  color:red;
+  color:#FA903A;
   font-size: 30px;
   background: none;
+}
+
+.home-page__logo{
+	margin:20px;
 }
